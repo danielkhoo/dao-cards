@@ -179,7 +179,7 @@ const CardComponent = ({ data }) => {
         <Box pt={4} width={'100%'}>
             <Text fontSize={16} fontWeight={600} textAlign="center" >Top Delegates</Text>
             {topDelegates.map((dlgt, idx) => {
-                return <Flex fontSize={16} justifyContent={'space-between'} alignItems='center' >
+                return <Flex fontSize={16} justifyContent={'space-between'} alignItems='center' key={idx}>
                     <Link href={`https://etherscan.io/address/${dlgt.id}`} isExternal mr={2} overflowWrap={"anywhere"}>{dlgt.id}</Link>
                     <Text>{dlgt.delegatedVotes} votes</Text>
                 </Flex>
