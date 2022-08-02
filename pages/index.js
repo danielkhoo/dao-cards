@@ -15,7 +15,8 @@ export default function Home() {
       </Flex>
       <Grid templateColumns='repeat(3, 1fr)' gap={6} mt={10}>
         <GridItem><Card subgraphName={"messari/ens-governance"} /></GridItem>
-        {/* <GridItem><Card subgraphName={"messari/fei-governance"} /></GridItem> */}
+        <GridItem><Card subgraphName={"messari/fei-governance"} /></GridItem>
+        <GridItem><Card subgraphName={"messari/aave-governance"} /></GridItem>
       </Grid>
     </VStack>
   )
